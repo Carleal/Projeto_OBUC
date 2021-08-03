@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-image: linear-gradient(
+      to right,
+      rgb(26, 55, 76) 25%,
+      transparent 75%
+    ),
+    url(./Images/admin-small.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0px;
+  height: 100px;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+}
+section {
+  display: flex;
+  flex-grow: 1;
+  background: rgb(245, 245, 245);
+}
+
+.header-label {
+  margin-left: 30px;
+  color: #eee;
+  font-size: 23px;
+  font-style: italic;
+}
+
+.header-user {
+  margin-right: 30px;
+}
+
+.button {
+  background: rgb(26, 55, 76);
+  color: #eee;
+  padding: 5px 10px;
+  margin: 2.5px 5px;
+  font-size: 15px;
+}
+.button:hover,
+.header-user:hover,
+form input:hover,
+form select:hover,
+.buttons button,
+table img {
+  cursor: pointer;
+}
+
+table img {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background: rgb(7, 110, 59);
+  height: 70px;
+  width: 100%;
+}
+
+footer img {
+  height: 50px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+aside {
+  background: linear-gradient(to top, rgb(78, 183, 246), rgb(26, 55, 76));
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+aside label {
+  color: #eee;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 2.5px 5px;
+}
+
+.internal {
+  margin: 20px;
+  flex-grow: 1;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+hr {
+  color: blue;
+}
+
+.internalTitle {
+  margin: 20px 20px;
+}
+
+form {
+  display: flex;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5px 5px;
+}
+
+form input,
+form select {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border: 1px gray solid;
+  outline: 0;
+}
+
+.content {
+  margin-top: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+table th {
+  background: rgb(26, 55, 76);
+  color: #eee;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+table td img {
+  width: 15px;
+  align-content: center;
+}
+.action {
+  display: flex;
+  flex-direction: row;
+  border: 0;
+  align-content: stretch;
+  justify-content: space-evenly;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}

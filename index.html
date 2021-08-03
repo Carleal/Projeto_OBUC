@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto OBUC</title>
+    <link href="./Css.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-label">Controle de Locais de Trabalho</div>
+      <div class="header-user">
+        <img src="./Images/user.svg" alt="" />
+      </div>
+    </header>
+    <div class="main">
+      <aside>
+        <label>Administração</label>
+        <div class="button">Administradores</div>
+        <div class="button">Áreas</div>
+        <div class="button">Locais de Trabalho</div>
+        <div class="button">Habilidades</div>
+        <div class="button">Log</div>
+        <div class="button">Responsáveis</div>
+      </aside>
+      <section>
+        <div class="internal">
+          <label class="internalTitle">Locais de trabalho</label>
+          <hr />
+          <form>
+            <div>
+              <label>Prédio</label>
+              <select id="predio" required>
+                <option selected="yes"></option>
+                <option>Prédio 1</option>
+                <option>Prédio 2</option>
+                <option>Prédio 3</option>
+                <option>Prédio 4</option>
+                <option>Prédio 5</option>
+                <option>Prédio 6</option>
+              </select>
+            </div>
+            <div>
+              <label> Local de trabalho </label>
+              <input
+                type="text"
+                id="local"
+                placeholder="Digite o local de trabalho"
+                required
+              />
+            </div>
+            <div class="buttons">
+              <button
+                type="button"
+                onclick="place.add()"
+                id="btn1"
+                class="button"
+              >
+                Adicionar
+              </button>
+              <button type="button" onclick="place.cancel()" class="button">
+                Cancelar
+              </button>
+            </div>
+          </form>
+          <div class="content">
+            <table border="1">
+              <thead>
+                <th>Prédio</th>
+                <th>Local de trabalho</th>
+                <th>Ações</th>
+              </thead>
+              <tbody id="tableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <img src="./Images/Logo.png" alt="Logo OBUC" />
+    </footer>
+  </body>
+</html>
